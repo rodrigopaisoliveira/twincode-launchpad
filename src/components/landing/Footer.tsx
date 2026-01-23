@@ -5,7 +5,7 @@ const Footer = () => {
     <footer id="contacto" className="py-24 md:py-32 bg-foreground text-background">
       <div className="container mx-auto px-4">
         
-        {/* Section Header - Centralizado para melhor estética */}
+        {/* Section Header */}
         <div className="fade-in-view mb-16 md:mb-24 text-center">
           <span className="font-mono text-xs tracking-widest opacity-60 uppercase block mb-4">
             03 / contacto
@@ -15,60 +15,65 @@ const Footer = () => {
           </h2>
         </div>
 
-        {/* Contact Grid - Centralizado e com melhor espaçamento */}
-        <div className="fade-in-view grid md:grid-cols-2 gap-16 md:gap-24 mb-24 max-w-4xl mx-auto">
+        {/* Contact Grid */}
+        <div className="fade-in-view grid md:grid-cols-2 gap-16 md:gap-24 mb-24 max-w-5xl mx-auto justify-items-center">
 
-          {/* Phone Section */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          {/* Phone Section - Mantido igual para consistência */}
+          <div className="flex flex-col items-center text-center">
             <div className="flex items-center gap-3 mb-6">
               <Phone size={18} className="opacity-60" />
               <span className="font-mono text-xs opacity-60 uppercase tracking-wider">Telemóvel</span>
             </div>
-            <div className="space-y-4">
-              <a 
-                href="tel:+351932132036"
-                className="group block"
-              >
+            <div className="space-y-6">
+              <a href="tel:+351932132036" className="group block">
                 <span className="text-xl md:text-2xl font-medium block hover:opacity-70 transition-opacity">
                   +351 932 132 036
                 </span>
-                <span className="text-xs font-mono opacity-40 uppercase tracking-tighter">Rodrigo Oliveira</span>
+                <span className="text-[10px] font-mono opacity-30 uppercase tracking-widest mt-1 block">Rodrigo Oliveira</span>
               </a>
-              <a 
-                href="tel:+351926318581"
-                className="group block"
-              >
+              <a href="tel:+351926318581" className="group block">
                 <span className="text-xl md:text-2xl font-medium block hover:opacity-70 transition-opacity">
                   +351 926 318 581
                 </span>
-                <span className="text-xs font-mono opacity-40 uppercase tracking-tighter">Leonardo Luz</span>
+                <span className="text-[10px] font-mono opacity-30 uppercase tracking-widest mt-1 block">Leonardo Luz</span>
               </a>
             </div>
           </div>
 
-          {/* Social Section */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          {/* Social Section - Ajustado para ser clicável apenas no @ */}
+          <div className="flex flex-col items-center text-center">
             <div className="flex items-center gap-3 mb-6">
               <Instagram size={18} className="opacity-60" />
               <span className="font-mono text-xs opacity-60 uppercase tracking-wider">Social</span>
             </div>
             <div className="space-y-6">
-              <a 
-                href="https://instagram.com/twincode.pt"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-xl md:text-2xl font-medium hover:opacity-70 transition-all hover:translate-x-1"
-              >
-                Instagram <span className="opacity-40 text-lg">@twincode.pt</span>
-              </a>
-              <a 
-                href="https://tiktok.com/@twincode.pt"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-xl md:text-2xl font-medium hover:opacity-70 transition-all hover:translate-x-1"
-              >
-                TikTok <span className="opacity-40 text-lg">@twincode.pt</span>
-              </a>
+              
+              {/* Instagram */}
+              <div className="text-xl md:text-2xl font-medium cursor-default">
+                Instagram 
+                <a 
+                  href="https://instagram.com/twincode.pt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base opacity-40 font-light ml-2 transition-all duration-300 hover:opacity-100 hover:text-white cursor-pointer inline-block"
+                >
+                  @twincode.pt
+                </a>
+              </div>
+
+              {/* TikTok */}
+              <div className="text-xl md:text-2xl font-medium cursor-default">
+                TikTok 
+                <a 
+                  href="https://tiktok.com/@twincode.pt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base opacity-40 font-light ml-2 transition-all duration-300 hover:opacity-100 hover:text-white cursor-pointer inline-block"
+                >
+                  @twincode.pt
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -76,7 +81,7 @@ const Footer = () => {
         {/* Divider & Credits */}
         <div className="fade-in-view border-t border-background/10 pt-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="font-mono text-[10px] opacity-40 uppercase tracking-widest order-2 md:order-1">
+            <div className="font-mono text-[10px] opacity-40 uppercase tracking-widest order-2 md:order-1 text-center md:text-left">
               Built with code by Twincode
             </div>
 
@@ -85,7 +90,7 @@ const Footer = () => {
               <span className="animate-blink">_</span>
             </div>
 
-            <div className="font-mono text-[10px] opacity-40 order-3">
+            <div className="font-mono text-[10px] opacity-40 order-3 text-center md:text-right">
               © {new Date().getFullYear()} — TODOS OS DIREITOS RESERVADOS
             </div>
           </div>
