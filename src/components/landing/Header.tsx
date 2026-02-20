@@ -1,3 +1,6 @@
+
+<meta name="facebook-domain-verification" content="ln4jzvvwyl6anhsw2u5xng9bkoalyz" />
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
