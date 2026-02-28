@@ -31,12 +31,6 @@ const Footer = () => {
                 </span>
                 <span className="text-[10px] font-mono opacity-30 uppercase tracking-widest mt-1 block">Rodrigo Oliveira</span>
               </a>
-              <a href="tel:+351926318581" className="group block">
-                <span className="text-xl md:text-2xl font-medium block hover:opacity-70 transition-opacity">
-                  +351 926 318 581
-                </span>
-                <span className="text-[10px] font-mono opacity-30 uppercase tracking-widest mt-1 block">Leonardo Luz</span>
-              </a>
             </div>
           </div>
 
